@@ -1,0 +1,70 @@
+How to count the number of lines in the file === wc -l filename
+How to provide numbering in the file === cat -n filename
+How to display uniq line count in the file == sort filename | uniq | wc -l
+How to display particler line in the file == sed -n '5p' filename
+How to display matched patren in file == grep 
+How to add new line afte the line == sed -e '/pattern/a pattern' filename
+How to add new line before the line == sed -i '/pattern/i pattern' filename
+How to delete particluer line  === sed -i 'linenumber' filename
+
+find
+=================================================
+
+#!/bin/bash
+
+a=2
+b=3
+
+            if [ $a -eq $b ]; then
+               echo "Varibale a and varibale b will same"
+            else
+               echo "varibale a and varible b will be differnet"
+            fi
+
+            if [ $a -le $b ]; then
+               echo "varibale a is less then to varibale b"
+            else
+               echo "varibale a and varible b will be the same"
+           fi
+
+=======================================================================
+
+#!/bin/bash
+
+a=2
+b=3
+
+            if [ $a -eq $b ]; then
+               echo "Varibale a and varibale b will same"
+            else
+               echo "varibale a and varible b will be differnet"
+               exit 1
+            fi
+
+            if [ $a -le $b ]; then
+               echo "varibale a is less then to varibale b"
+            else
+               echo "varibale a and varible b will be the same"
+           fi
+====================================================================================
+#!/bin/bash
+echo "Enter password"
+read pass
+if [ $pass="password" ]
+then
+  echo "The password is correct."
+else
+  echo "The password is incorrect, try again."
+fi
+=============================================================================
+#!/bin/bash
+n=10
+if [ $((n%3))==0 ]
+then
+  echo "The number is even."
+else
+  echo "The number is odd."
+fi
+
+==============================================
+
