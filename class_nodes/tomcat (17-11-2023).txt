@@ -1,0 +1,52 @@
+tomcat : webserver / deployment server.
+
+Tomcat portnumber ==>> 8080
+
+webserver : applications accesed via web browser ===>> webservers ==>> tomcat.
+
+tomcat ===>> deployment server..
+
+tomcat ==>> apache
+
+dev ==>> code ==>> push ==>> github ==>> maven ==>> build ==> war / jar /ear -->>copy to  tomcat ==>> under webapps ==>>App ==>> deployment.
+
+Tomcats supports ===>> java , .net , python...etc
+
+Tomcat supports both http and https protocalls 
+
+http : with out security ===>> 80
+
+https : with security ===>> SSL cirtificate link upload ===>> 443
+
+**********AWS control manager ==>>> request raise to cyber security team ===>> SSL cirtificate ==>> email ==>> ACM ==>> forward to us.==>> SSL citificate link add to tomcat instance.
+
+
+Tomcat ---> important directories
+
+1. webapps ==>> war file to copy in this directory..
+
+2. bin ===>> tomcat service ==>> start / stop
+
+3. conf ===>>> with in this directory ==>> server.xml , web.xml , tomcatusers.xml
+
+4. cd /webapps/manager/META-INIF/ ===>> context.xml ===>> value and allow tag ==>> remove.
+
+5. logs ===>>> tomcar server ===>> logs..
+
+6. default tomcat directory : /home/ec2-user/apache-tomcat-9.0.58
+
+
+
+Tomcat instalaltion steps :
+
+1. we need to take one ec2 instance and login into the instance..
+
+2. we need to install java
+
+3. online ==>> tomcat link copy ==>>> sudo wget tomcat link
+
+4. tar.gz ==>> unzip ===>>> tar -xvf tar.gz
+
+5. cd apache-9.0.58 ===>> webapps ( war file copy) ==>> tomcat service start ( under bin direcory)
+
+=====================================================================================
